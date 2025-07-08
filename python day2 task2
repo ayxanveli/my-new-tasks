@@ -1,0 +1,6 @@
+#istifadeciden reqem al onun cut ve tek oldugunu yaz.
+reqem = int(input("reqem daxil et: "))
+if reqem % 2 == 0:
+    print("cut ededdir")
+else:
+    print("tek ededdir")
