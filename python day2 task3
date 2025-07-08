@@ -1,0 +1,6 @@
+#istifadeciden dogum ilini al onun 2025 de nece yasi oldugunu yaz.
+def yas_hesabla(dogum_ili):
+    yas = 2025 - dogum_ili
+    print(f"Senin yasın: {yas}")
+il = int(input("Dogum ilini daxil et: "))
+yas_hesabla(il)
