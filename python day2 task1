@@ -1,0 +1,6 @@
+#istifadeciden bir reqem al. "salam" sozunu hemin reqem qeder defe cap et.
+reqem = int(input("reqem daxil et: "))
+def salam_yaz(reqem):
+    for i in range(reqem):
+        print("salam")
+salam_yaz(reqem)
