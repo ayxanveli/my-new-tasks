@@ -1,0 +1,8 @@
+#İstifadəçidən bir ədəd daxil etməsini istəyin. Daha sonra funksiyadan istifadə edərək bu ədədin: menfi musbet sifir oldugunu yazdir.
+eded = int(input("eded daxil et: "))
+if eded == 0:
+    print("sifirdir")
+elif eded > 0:
+    print("musbet ededdir")
+else:
+    print("menfi ededdir")
