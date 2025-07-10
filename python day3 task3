@@ -1,0 +1,8 @@
+#input() ilə istifadəçidən ədəd alın.cut_ve_tek(eded) adlı funksiya yaradın.if eded % 2 == 0 şərtindən istifadə edin.print() ilə nəticəni ekrana çıxarın.
+def cut_ve_tek(eded):
+    if eded % 2 == 0:
+        print("cutdur")
+    else:
+        print("tekdir")
+eded = int(input("eded daxil et: "))
+cut_ve_tek(eded)
