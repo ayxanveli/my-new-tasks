@@ -1,0 +1,17 @@
+#İstifadəçidən 2 ədəd alın (input ilə).istifadəçidən əməliyyat alın: +, -, *, və ya /,hesabla(a, b, emel) adlı funksiya yaradın və əməliyyatı yerinə yetirsin.
+def hesabla(a, b, emel):
+    if emel == "+":
+        return a + b
+    elif emel == "-":
+        return a - b
+    elif emel == "*":
+        return a * b
+    elif emel == "/":
+        return a / b
+    else:
+        return "yanlis emeliyyat daxil edildi."
+a = float(input("birinci ededi daxil et: "))
+b = float(input("ikinci ededi daxil et: "))
+emel = input("emeliyyat sec (-,+,*,/): ")
+netice = hesabla(a, b, emel)
+print(netice)
