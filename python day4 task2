@@ -1,0 +1,4 @@
+#(5, 5, 5, 10) tuple-da 5-in neçə dəfə təkrarlandığını tapın.
+t = (5, 5, 5, 10)
+count_5 = t.count(5)
+print("5-in təkrarlanma sayı:", count_5)
