@@ -1,0 +1,4 @@
+#(10, 20, 30, 40, 50) tuple yaradın və 30-un indeksini tapın.
+t = (10, 20, 30, 40, 50)
+index_30 = t.index(30)
+print("30-un indeksi:", index_30)
