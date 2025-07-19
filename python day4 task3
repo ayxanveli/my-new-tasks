@@ -1,0 +1,7 @@
+#İstifadəçidən bir söz daxil etməsini istə.Əgər daxil etdiyi söz tərsinə oxunduqda da eyni qalırsa, "Palindromdur" yaz.Əgər fərqlidirsə, "Palindrom deyil" yaz.
+soz = input("Bir söz daxil et: ")
+
+if soz == soz[::-1]:
+    print("Palindromdur")
+else:
+    print("Palindrom deyil")
