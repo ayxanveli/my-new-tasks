@@ -1,0 +1,10 @@
+# datetime modulu
+from datetime import date
+bugun = date.today()
+print(bugun)
+print(type(bugun))
+print(bugun.day)
+print(bugun.month)
+print(bugun.weekday())
+print(bugun.year)
+print(bugun.isoweekday())
