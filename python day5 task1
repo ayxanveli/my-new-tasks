@@ -1,0 +1,9 @@
+# 1901 den 2001 e kimi olan bazar sayisi
+from datetime import datetime
+
+bazar_sayisi = 0
+for il in range(1901,2001):
+    for ay in range(1,13):
+        if datetime(il, ay, 1).weekday() == 6:
+            bazar_sayisi += 1
+print(bazar_sayisi)
