@@ -1,0 +1,13 @@
+#İstifadəçidən 5 ədəd tam ədəd daxil etməsini istə. Sonra bu ədədlərin ortalamasını hesabla və ekrana çap et
+# 5 ədəd daxil et və ortalamasını hesabla
+
+a1 = int(input("1-ci ededi daxil et: "))
+a2 = int(input("2-ci ededi daxil et: "))
+a3 = int(input("3-cü ededi daxil et: "))
+a4 = int(input("4-cü ededi daxil et: "))
+a5 = int(input("5-ci ededi daxil et: "))
+
+toplam = a1 + a2 + a3 + a4 + a5
+ortalama = toplam / 5
+
+print("Ortalama:", ortalama)
