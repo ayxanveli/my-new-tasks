@@ -1,0 +1,32 @@
+#sagirdler verilib 67 nefer onlarin kecib yoxsa kecmiyib onu yaz.
+# Faylı oxuyub dəyişdirilmiş yeni fayla yazan skript
+def ortalama_hesabla(v1, v2, final):
+    return v1 * 0.3 + v2 * 0.3 + final * 0.4
+
+# Faylı oxu
+with open("sagirdler.txt", "r", encoding="utf-8") as fayl:
+    setirler = fayl.readlines()
+
+print("Keçid vəziyyəti:\n")
+for setir in setirler:
+    setir = setir.strip()
+    if not setir:
+        continue
+    try:
+        # Nümunə sətr: Adil Məmmədov Fizika 76/70/88
+        hisseler = setir.rsplit(" ", 1)  # ən sondakı 76/70/88 hissəsini ayırırıq
+        ad_bolum = hisseler[0]
+        ballar = hisseler[1].split("/")  # [76, 70, 88]
+
+        v1 = int(ballar[0])
+        v2 = int(ballar[1])
+        final = int(ballar[2])
+
+        ort = ortalama_hesabla(v1, v2, final)
+
+        netice = "KEÇİB ✅" if ort >= 60 else "QALIB ❌"
+
+        print(f"{ad_bolum} - Orta: {ort:.2f} - {netice}")
+    except:
+        print(f"Xəta: '{setir}' sətrində problem var.")
+        
